@@ -127,20 +127,6 @@ public class Client {
 								// Skickar in Array till ClientUI
 								client.updateUsers(arr);
 								
-//								if(offMsg != null){
-//									
-//									for( Message mess : offMsg){
-//										if(arr.contains(mess.getRecipient())){
-//											String time = df.format(new Date());
-//											String messageLf = time + " " + mess.getMessage()
-//													+ "\n";
-//											client.privateAppend(messageLf, img,
-//													mess.getRecipient(), mess.getSender());
-//										}
-//									}
-//									
-//								}
-
 							} else if (message.contains("updateTheUser")) {
 								// Splittar ut updateTheUser
 								String split = message.split("updateTheUser")[0];

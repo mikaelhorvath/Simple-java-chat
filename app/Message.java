@@ -26,14 +26,6 @@ public class Message implements Serializable {
 		this.sender = sender;
 	}
 	
-//	Message(int type, String message, ImageIcon image, String[] recipients, String sender) {
-//		this.type = type;
-//		this.message = message;
-//		this.image = image;
-//		this.recipients = recipients;
-//		this.sender = sender;
-//	}
-	
 	/**
 	 * Hämta typ
 	 * @return type

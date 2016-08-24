@@ -93,10 +93,6 @@ public class Server {
 	 */
 	private synchronized void broadcast(Message message) {
 		Message messageLf = message;
-//		if (clientList == null)
-//			System.out.print(messageLf);
-//		else
-//			//System.out.println(messageLf); // append in the room window
 
 		for (int i = clientList.size(); --i >= 0;) {
 			ClientHandle ct = clientList.get(i);
@@ -196,13 +192,6 @@ public class Server {
 						ClientHandle ct = clientList.get(i);
 						broadcast(new Message(Message.USER, ct.username
 								+ "USERNAME100", null, "", chatMsg.getSender()));
-//						// För att hantera användare och kolla PM!
-//						set.add(ct.username);
-//						System.out.println(set);
-//						
-//						for(Message msg : offMsg){
-//							System.out.println(msg);
-//						}
 						
 					}
 					break;
